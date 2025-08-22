@@ -8,17 +8,73 @@ export default withNuxt([
       '@stylistic': stylistic,
     },
     rules: {
-      '@stylistic/indent': ['error', 2],
-      '@stylistic/comma-dangle': ['error', 'always-multiline'],
-      '@stylistic/curly-newline': ['error'],
+      '@stylistic/array-bracket-newline': [
+        'error',
+        {
+          multiline: true,
+        },
+      ],
+      '@stylistic/array-element-newline': [
+        'error',
+        'always',
+      ],
+      '@stylistic/comma-dangle': [
+        'error',
+        'always-multiline',
+      ],
+      '@stylistic/curly-newline': [
+        'error',
+        'always',
+      ],
       '@stylistic/eol-last': ['error'],
-      '@stylistic/max-len': ['error', 100],
+      '@stylistic/indent': [
+        'error',
+        2,
+      ],
+      '@stylistic/lines-between-class-members': [
+        'error',
+        {
+          enforce: [
+            {
+              blankLine: 'always',
+              prev: 'method',
+              next: 'method',
+            },
+          ],
+        },
+        {
+          exceptAfterOverload: true,
+        },
+      ],
+      '@stylistic/max-len': [
+        'error',
+        100,
+      ],
+      '@stylistic/member-delimiter-style': [
+        'error',
+        {
+          multiline: {
+            delimiter: 'semi',
+          },
+        },
+      ],
       '@stylistic/multiline-ternary': ['error'],
       '@stylistic/newline-per-chained-call': ['error'],
       '@stylistic/no-multiple-empty-lines': ['error'],
       '@stylistic/no-trailing-spaces': ['error'],
-      '@stylistic/quotes': ['error', 'single'],
-      '@stylistic/semi': ['error', 'always'],
+      '@stylistic/object-curly-newline': [
+        'error',
+        'always',
+      ],
+      '@stylistic/object-property-newline': ['error'],
+      '@stylistic/quotes': [
+        'error',
+        'single',
+      ],
+      '@stylistic/semi': [
+        'error',
+        'always',
+      ],
       '@stylistic/spaced-comment': ['error'],
     },
   },
