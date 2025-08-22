@@ -16,21 +16,14 @@ export default withNuxt([
       ],
       '@stylistic/array-element-newline': [
         'error',
-        'always',
+        {
+          multiline: true,
+        },
       ],
-      '@stylistic/comma-dangle': [
-        'error',
-        'always-multiline',
-      ],
-      '@stylistic/curly-newline': [
-        'error',
-        'always',
-      ],
+      '@stylistic/comma-dangle': ['error', 'always-multiline'],
+      '@stylistic/curly-newline': ['error', 'always'],
       '@stylistic/eol-last': ['error'],
-      '@stylistic/indent': [
-        'error',
-        2,
-      ],
+      '@stylistic/indent': ['error', 2],
       '@stylistic/lines-between-class-members': [
         'error',
         {
@@ -46,10 +39,7 @@ export default withNuxt([
           exceptAfterOverload: true,
         },
       ],
-      '@stylistic/max-len': [
-        'error',
-        100,
-      ],
+      '@stylistic/max-len': ['error', 100],
       '@stylistic/member-delimiter-style': [
         'error',
         {
@@ -62,19 +52,10 @@ export default withNuxt([
       '@stylistic/newline-per-chained-call': ['error'],
       '@stylistic/no-multiple-empty-lines': ['error'],
       '@stylistic/no-trailing-spaces': ['error'],
-      '@stylistic/object-curly-newline': [
-        'error',
-        'always',
-      ],
+      '@stylistic/object-curly-newline': ['error', 'always'],
       '@stylistic/object-property-newline': ['error'],
-      '@stylistic/quotes': [
-        'error',
-        'single',
-      ],
-      '@stylistic/semi': [
-        'error',
-        'always',
-      ],
+      '@stylistic/quotes': ['error', 'single'],
+      '@stylistic/semi': ['error', 'always'],
       '@stylistic/spaced-comment': ['error'],
     },
   },
