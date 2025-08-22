@@ -2,8 +2,10 @@
 export default defineNuxtConfig({
   modules: ['@nuxt/eslint'],
   imports: {
-    autoImport: false,
+    scan: false,
   },
-  devtools: { enabled: true },
+  devtools: {
+    enabled: true,
+  },
   compatibilityDate: '2025-07-15',
 });
