@@ -10,6 +10,12 @@ export default withNuxt([
   globalIgnores(['**/.nuxt/**', '**/node_modules/**', '**/*.js', '**/*.d.ts']),
   ...pluginVue.configs['flat/recommended'],
   {
+    files: ['**/*.vue'],
+    rules: {
+      'vue/multi-word-component-names': 'off',
+    },
+  },
+  {
     plugins: {
       '@stylistic': stylistic,
     },
