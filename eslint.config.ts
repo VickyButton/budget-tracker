@@ -1,8 +1,12 @@
 // @ts-check
+import {
+  globalIgnores,
+} from 'eslint/config';
 import withNuxt from './.nuxt/eslint.config.mjs';
 import stylistic from '@stylistic/eslint-plugin';
 
 export default withNuxt([
+  globalIgnores(['**/.nuxt/**', '**/node_modules/**', '**/*.js', '**/*.d.ts']),
   {
     plugins: {
       '@stylistic': stylistic,
