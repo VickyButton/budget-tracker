@@ -2,11 +2,13 @@
 import {
   globalIgnores,
 } from 'eslint/config';
+import pluginVue from 'eslint-plugin-vue';
 import withNuxt from './.nuxt/eslint.config.mjs';
 import stylistic from '@stylistic/eslint-plugin';
 
 export default withNuxt([
   globalIgnores(['**/.nuxt/**', '**/node_modules/**', '**/*.js', '**/*.d.ts']),
+  ...pluginVue.configs['flat/recommended'],
   {
     plugins: {
       '@stylistic': stylistic,
