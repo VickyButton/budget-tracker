@@ -1,6 +1,4 @@
-import {
-  MemoryStore,
-} from '../store';
+import { MemoryStore } from '../store';
 
 export interface Revenue {
   id: string;

@@ -1,8 +1,5 @@
 export default {
   content: [],
-  theme: {
-    extend: {
-    },
-  },
+  theme: { extend: {} },
   plugins: [],
 };

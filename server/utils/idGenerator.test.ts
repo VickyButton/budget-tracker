@@ -1,14 +1,6 @@
-import {
-  describe,
-  expect,
-  it,
-} from 'vitest';
-import {
-  UuidGenerator,
-} from './idGenerator';
-import {
-  validate,
-} from 'uuid';
+import { describe, expect, it } from 'vitest';
+import { UuidGenerator } from './idGenerator';
+import { validate } from 'uuid';
 
 describe('UuidGenerator', () => {
   it('generates a uuid', () => {

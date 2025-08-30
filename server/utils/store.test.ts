@@ -3,13 +3,9 @@ import {
   expect,
   it,
 } from 'vitest';
-import {
-  MemoryStore,
-} from './store';
+import { MemoryStore } from './store';
 
-const testItem = {
-  id: '12345',
-};
+const testItem = { id: '12345' };
 
 describe('MemoryStore', () => {
   it('can save and find an item', async () => {
