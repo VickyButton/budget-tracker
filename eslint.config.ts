@@ -16,6 +16,7 @@ export default withNuxt([
     },
   },
   {
+    files: ['**/*.ts', '**/*.vue'],
     plugins: {
       '@stylistic': stylistic,
     },
